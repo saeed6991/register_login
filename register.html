@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Registrierungsformular</title>
+  </head>
+  <body>
+    <a class="homeButton" href="index.html">
+      <button>Home</button>
+    </a>
+    <h1>Registrierungsformular</h1>
+    <form action="data.php" method="POST" onsubmit="showPopup()">
+        <input type="email" name="username" placeholder="Email">
+        <input type="password" name="password" placeholder="Passwort">
+        <input type="submit" value="Register" class="register">
+    </form>
+    <script>
+        function showPopup() {
+            alert('Form submitted!');
+        }
+    </script>
+  </body>
+</html>
